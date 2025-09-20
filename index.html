@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mainpage — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="site">
+
+  <!-- Fixed left quick button bar -->
+  <nav class="quickbar" aria-label="Quick navigation">
+    <ul>
+      <li><a href="index.html" class="qb-link active">HOME</a></li>
+      <li><a href="#work" class="qb-link">WORK</a></li>
+      <li><a href="#about" class="qb-link">ABOUT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main class="main-layout">
+
+    <!-- Hero area (video plays once, muted, no loop) -->
+    <section class="hero">
+      <video id="heroVideo" class="hero-video" autoplay muted playsinline>
+        <source src="videos/hero.mp4" type="video/mp4">
+        Sorry — your browser doesn't support embedded video.
+      </video>
+      <div class="hero-overlay">
+        <h1 class="site-title">Your Name / Studio</h1>
+        <p class="site-sub">Motion design &amp; interactive systems</p>
+      </div>
+    </section>
+
+    <!-- Work / projects -->
+    <section id="work" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Selected Work</h2>
+
+        <div class="projects-grid">
+          <!-- Repeat this block for each project thumbnail -->
+          <a class="project-card" href="project1.html">
+            <div class="thumb">
+              <img src="images/project1-thumb.jpg" alt="Project 1 thumbnail">
+            </div>
+            <div class="card-meta">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-short">Short project descriptor — year · role</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="project2.html">
+            <div class="thumb">
+              <img src="images/project2-thumb.jpg" alt="Project 2 thumbnail">
+            </div>
+            <div class="card-meta">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-short">Short project descriptor — year · role</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="project3.html">
+            <div class="thumb">
+              <img src="images/project3-thumb.jpg" alt="Project 3 thumbnail">
+            </div>
+            <div class="card-meta">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-short">Short project descriptor — year · role</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="project4.html">
+            <div class="thumb">
+              <img src="images/project4-thumb.jpg" alt="Project 4 thumbnail">
+            </div>
+            <div class="card-meta">
+              <h3 class="project-title">Project Four</h3>
+              <p class="project-short">Short project descriptor — year · role</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="project5.html">
+            <div class="thumb">
+              <img src="images/project5-thumb.jpg" alt="Project 5 thumbnail">
+            </div>
+            <div class="card-meta">
+              <h3 class="project-title">Project Five</h3>
+              <p class="project-short">Short project descriptor — year · role</p>
+            </div>
+          </a>
+
+          <a class="project-card" href="project6.html">
+            <div class="thumb">
+              <img src="images/project6-thumb.jpg" alt="Project 6 thumbnail">
+            </div>
+            <div class="card-meta">
+              <h3 class="project-title">Project Six</h3>
+              <p class="project-short">Short project descriptor — year · role</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, neque ligula facilisis est.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer (contact + social) -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="contact">
+          <p class="contact-line">Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+          <p class="contact-line">Phone: +00 123 456 789</p>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Behance">Behance</a>
+          <a href="#" aria-label="LinkedIn">LI</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
